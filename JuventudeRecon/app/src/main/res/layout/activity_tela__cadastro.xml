@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/PretoRecon"
+    tools:context="br.com.juventuderecon.Tela_Cadastro">
+
+
+    <TextView
+        android:id="@+id/textEmailCadastro"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:text="@string/Email"
+        android:textColor="@color/BrancoRecon"
+        android:textSize="20dp" />
+
+    <EditText
+        android:id="@+id/recebendoEmailCadastro"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_below="@id/textEmailCadastro"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:background="@color/BackEdit"
+        android:inputType="textEmailAddress"/>
+
+    <TextView
+        android:id="@+id/textSenhaCadastro"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:layout_below="@id/recebendoEmailCadastro"
+        android:textColor="@color/BrancoRecon"
+        android:textSize="20dp"
+        android:text="@string/Senha" />
+
+    <EditText
+        android:id="@+id/recebendoSenhaCadastro"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_below="@id/textSenhaCadastro"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:background="@color/BackEdit"
+        android:inputType="textPassword"/>
+
+    <TextView
+        android:id="@+id/textConfirmaSenhaCadastro"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:layout_below="@id/recebendoSenhaCadastro"
+        android:textColor="@color/BrancoRecon"
+        android:textSize="20dp"
+        android:text="@string/Confirma_Senha"
+        />
+
+    <EditText
+        android:id="@+id/recebendoConfirmaSenhaCadastro"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_below="@id/textConfirmaSenhaCadastro"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:background="@color/BackEdit"
+        android:inputType="textPassword"/>
+
+    <TextView
+        android:id="@+id/textData"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:layout_below="@id/recebendoConfirmaSenhaCadastro"
+        android:textColor="@color/BrancoRecon"
+        android:textSize="20dp"
+        android:text="@string/Data"/>
+
+    <EditText
+        android:id="@+id/recebendoData"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_below="@id/textData"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:background="@color/BackEdit"
+        android:inputType="date"/>
+
+    <Button
+        android:id="@+id/btnCadastro"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/recebendoData"
+        android:layout_marginTop="32dp"
+        android:text="@string/Cadastrar" />
+
+
+
+</RelativeLayout>

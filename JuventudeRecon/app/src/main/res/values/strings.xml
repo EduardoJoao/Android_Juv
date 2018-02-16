@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">JuventudeRecon</string>
+    <string name="Email">Email:</string>
+    <string name="Senha">Senha:</string>
+    <string name="Data">Data de Nascimento:</string>
+    <string name="Confirma_Senha">Digite Novamente:</string>
+    <string name="Cadastrar">Cadastrar</string>
+    <string name="Login">Login</string>
+</resources>

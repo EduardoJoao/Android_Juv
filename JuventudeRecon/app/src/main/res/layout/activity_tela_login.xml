@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/PretoRecon"
+    tools:context="br.com.juventuderecon.Tela_Login"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+
+
+    <ImageView
+        android:id="@+id/imageJuventude"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginRight="100dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/juventude" />
+
+    <TextView
+        android:id="@+id/textEmail"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:layout_below="@id/imageJuventude"
+        android:text="@string/Email"
+        android:textColor="@color/BrancoRecon"
+        android:textSize="20dp" />
+
+    <EditText
+        android:id="@+id/recebendoEmail"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_below="@id/textEmail"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:background="@color/BackEdit" />
+    <TextView
+
+        android:id="@+id/textSenha"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:layout_below="@id/recebendoEmail"
+        android:textColor="@color/BrancoRecon"
+        android:textSize="20dp"
+        android:text="@string/Senha"/>
+
+    <EditText
+        android:id="@+id/recebendoSenha"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_below="@id/textSenha"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:background="@color/BackEdit" />
+
+
+    <Button
+        android:id="@+id/btnCadastro"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/recebendoSenha"
+        android:layout_alignStart="@+id/recebendoSenha"
+        android:layout_below="@+id/recebendoSenha"
+        android:layout_marginRight="205dp"
+        android:layout_marginTop="32dp"
+        android:text="@string/Cadastrar" />
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/btnCadastro"
+        android:layout_marginLeft="205dp"
+        android:text="@string/Login" />
+
+
+</RelativeLayout>
